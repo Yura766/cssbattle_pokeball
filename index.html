@@ -1,0 +1,63 @@
+<div class="pokeball">
+  <div class="shell"></div>
+  <div class="core"></div>   
+</div>
+
+<style>
+  *{
+    margin:0;padding:0;
+   }
+  body{
+    background-color:#6CB3A9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .shell{
+    display:flex;
+    justify-content:center;
+    width:200px;
+    height:200px;
+    background-color:#FFF;
+    border-radius:50%;
+    overflow:hidden;
+  }  
+  .shell::after{
+    content:'';
+    height:100px;
+    width:200px;
+    background:#D25B70;
+  }
+  .core{
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    height:20px;
+    width:200px;
+    background-color:#6CB3A9;
+  }
+  .core::before{
+    content:'';
+    display:flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    width:180px;
+    height:20px;
+    background-color:#781728;
+  }
+    .core::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    translate:-50% -50%;
+    width:50px;
+    height:50px;
+    background-color:#F6DF96;
+    border-radius:50%;
+    border:solid #781728 10px;
+  }
+</style>
